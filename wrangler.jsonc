@@ -37,27 +37,27 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "preview_id": "ef93d42dc4b34969bab404d2e80f8dd3", // Override with DEPLOY_KV_PREVIEW_NAMESPACE_ID (falls back to DEPLOY_KV_NAMESPACE_ID)
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3" // Override with DEPLOY_KV_NAMESPACE_ID
+      "preview_id": "c24ac057c8fa4e1fbc6350ca57392a11", // Override with DEPLOY_KV_PREVIEW_NAMESPACE_ID (falls back to DEPLOY_KV_NAMESPACE_ID)
+      "id": "c24ac057c8fa4e1fbc6350ca57392a11" // Override with DEPLOY_KV_NAMESPACE_ID
     }
   ],
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "sink", // Override with DEPLOY_D1_DATABASE_NAME (default: sink)
-      "database_id": "ef964055-65bf-4b78-b109-ac9c9290ae62", // Override with DEPLOY_D1_DATABASE_ID (required for CLI deploy)
+      "database_id": "712ea79d-583f-4897-b35e-40e472e19557", // Override with DEPLOY_D1_DATABASE_ID (required for CLI deploy)
       "migrations_dir": "drizzle"
     }
   ],
-  "r2_buckets": [
-    {
-      "binding": "R2",
+//  "r2_buckets": [
+//    {
+//      "binding": "R2",
       // preview_bucket_name: DEPLOY_R2_PREVIEW_BUCKET_NAME (falls back to DEPLOY_R2_BUCKET_NAME)
       // omit DEPLOY_R2_BUCKET_NAME to drop R2 from generated deploy config
-      "preview_bucket_name": "sink",
-      "bucket_name": "sink" // Override with DEPLOY_R2_BUCKET_NAME
-    }
-  ],
+//      "preview_bucket_name": "sink",
+//      "bucket_name": "sink" // Override with DEPLOY_R2_BUCKET_NAME
+//    }
+//  ],
   "triggers": {
     "crons": ["0 0 * * *"] // Run backup task daily at 00:00 UTC
   }
