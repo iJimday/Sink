@@ -1,6 +1,6 @@
 export default defineAppConfig({
   title: 'JimDay Links',
-  documentation: 'https://sink.cool/',
+  documentation: 'https://docs.sink.cool/',
   github: 'https://github.com/iJimday/Sink',
   coffee: 'https://www.jimday.cn/',
   twitter: 'https://www.jimday.cn/',
